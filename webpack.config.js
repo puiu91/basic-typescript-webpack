@@ -1,8 +1,10 @@
+const path = require("path");
+
 module.exports = {
   devtool: 'inline-source-map',
   entry: './src/index.ts',
   output: {
-    path: __dirname + '/public',
+    path: path.resolve('public'),
     filename: 'build/app.js'
   },
   resolve: {
